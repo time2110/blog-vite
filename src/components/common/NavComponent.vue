@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { MenuProps } from 'ant-design-vue';
+import type { MenuProps } from 'ant-design-vue';
 const current = ref<string[]>(['index']);
 const items = ref<MenuProps['items']>([
   {
@@ -29,7 +29,7 @@ const items = ref<MenuProps['items']>([
     title: '关于',
   },
 ]);
-function handleClickMenu(obj) {
+function handleClickMenu(obj: object) {
   console.log(obj)
 }
 </script>
