@@ -6,6 +6,7 @@
   background-color: #fffbf0;
   height: 100vh;
   cursor: default;
+  min-width: 556px;
 }
 
 @media (min-width: 1024px) {}

@@ -59,16 +59,18 @@ function handleClickMenu(obj:{key:string}) {
   justify-content: space-between;
   background-color: #eee;
   opacity: 0.8;
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   left: 0;
   .tag {
+    display: none;
     line-height: 47px;
     margin-left: 50px;
     font-size: 14px;
   }
   .ant-menu-overflow {
+    min-width: 556px;
     :deep(.ant-menu-item) {
       margin: 0 20px;
     }
@@ -90,6 +92,11 @@ function handleClickMenu(obj:{key:string}) {
   }
   :deep(.ant-menu-light) {
     background: unset;
+  }
+  @media (min-width: 778px) {
+    .tag {
+      display: block;
+    }
   }
 }
 </style>

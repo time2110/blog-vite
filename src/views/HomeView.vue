@@ -20,7 +20,7 @@ function handleClick() {
 
 <style scoped lang="scss">
   .home-container {
-    height: 100%;
+    height: calc( 100% - 47px);
     .ant-card {
       background-color: unset;
       padding: 20px;
