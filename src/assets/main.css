@@ -4,7 +4,22 @@
 #app {
   font-weight: normal;
   background-color: #fffbf0;
-  height: 10000px;
+  height: 100vh;
+  cursor: default;
 }
 
 @media (min-width: 1024px) {}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.ant-btn-primary {
+  background-color: #ad6d62;
+}
+.ant-btn-primary:not(:disabled):hover {
+  background-color: #d9aba3;
+}

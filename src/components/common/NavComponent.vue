@@ -1,10 +1,16 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 import type { MenuProps } from 'ant-design-vue';
-const current = ref<string[]>(['index']);
+import {useRoute, useRouter} from "vue-router";
+import {watch, ref} from "vue";
+const route = useRoute()
+const current = ref<string[]>(['']);
+watch(()=>route.name,()=>{
+  current.value[0] = <string>route.name
+})
+const router = useRouter()
 const items = ref<MenuProps['items']>([
   {
-    key: 'index',
+    key: 'home',
     label: '首页',
     title: '首页',
   },
@@ -30,7 +36,9 @@ const items = ref<MenuProps['items']>([
   },
 ]);
 function handleClickMenu(obj: object) {
-  console.log(obj)
+  router.push({
+    name: obj.key
+  })
 }
 </script>
 
