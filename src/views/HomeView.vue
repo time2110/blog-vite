@@ -1,9 +1,11 @@
 <script setup lang="ts">
-
+import NavComponent from "@/components/common/NavComponent.vue";
 </script>
 
 <template>
-  <main>
-    初始化
-  </main>
+  <NavComponent></NavComponent>
 </template>
+
+<style scoped lang="scss">
+
+</style>
