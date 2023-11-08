@@ -1,13 +1,10 @@
 @import './base.css';
+@import "./scrollbar.css";
 
-body {
-
-}
 #app {
   font-weight: normal;
   background-color: #fffbf0;
   height: 10000px;
 }
 
-@media (min-width: 1024px) {
-}
+@media (min-width: 1024px) {}
