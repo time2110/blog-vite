@@ -37,7 +37,7 @@ const items = ref<MenuProps['items']>([
 ]);
 function handleClickMenu(obj: object) {
   router.push({
-    name: obj.key
+    name: obj?.key
   })
 }
 </script>
